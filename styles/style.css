@@ -1,0 +1,665 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: grey;
+}
+
+.section-1{ 
+  position: relative;
+  background-image: url(../images/hexagon.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: fixed ;
+  width: 100%;
+  height:100vh;
+}
+
+.overlay-section-1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay-content{
+width: 900px;
+height: 200px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+
+
+}
+
+.overlay-content p{
+  font-size: 50px;
+  color: aliceblue;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing:0px;
+}
+
+.overlay-content button{
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: transparent;
+  border: 2px solid white;
+  margin-top: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn1:hover{
+color: rgb(255, 55, 48);
+border-color:  rgb(255, 55, 48);
+
+}
+
+.section-1 li{
+  list-style: none;
+}
+
+.section-1 ul a{
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 25px;
+  font-size: 19px;
+  transition: 0.4s;
+}
+
+.header{
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+.section-1 ul a:hover{
+color: rgb(255, 55, 48);
+}
+
+.section-2{
+  width: 100%;
+  height: 100vh;
+  background-color:rgb(23, 23, 23);
+  text-align: center;
+}
+
+.welcome{
+  color: rgb(255, 0, 0);
+  font-size: 50px;
+  padding-top: 50px;
+
+}
+
+.div-1{
+  width: 25%;
+  height: 200px;
+  float: left;
+  border: 2px solid white;
+  margin-top: 40px;
+  margin-left: 95px;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+
+.container{
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+}
+
+.icon-1{
+font-size: 25px;
+color: aliceblue;
+margin-top: 20px;
+}
+
+.digital{
+  color: aliceblue;
+  font-size: 30px;
+  padding: 0px;
+}
+
+.marketing{
+  font-size: 16px;
+  color: aliceblue;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.div-1 a{
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 20px;
+  transition: 0.3s;
+
+}
+
+.div-1 a:hover {
+  font-size: 25px;
+
+}
+.div-1:hover{
+  border-color: rgb(255, 55, 48);
+}
+
+.div-1:after{
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  top: 0;
+  left: 0;
+
+  background-color:rgb(255, 55, 48);
+  opacity: 0;
+  border-radius: 10px;
+
+}
+
+.div-1:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+
+}
+
+.section-3{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(36, 36, 36);
+  text-align: center;
+  color: aliceblue;
+}
+
+.offer{
+  padding-top: 50px;
+  font-size: 50px ;
+  color: rgb(255, 0, 0);
+}
+
+.offers-div{
+  width: 400px;
+  height: 180px;
+  background-color: transparent;
+  float:left ;
+  margin: 30px 30px  ;
+  border: 2px solid aliceblue;
+  border-radius: 10px ;
+  position: relative;
+  overflow: auto;
+  transition: 0.5s;
+}
+
+.container-2{
+  margin-left: 60px;
+}
+
+.apps-icon{
+width: 20%;
+height: 100%;
+float: left;
+}
+.apps-text{
+width:80%;
+height: 100%;
+float: left;
+padding-right: 37px;
+}
+.icons-1{
+  font-size: 45px;
+  margin-top: 30px;
+}
+.text-1{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+.text-2{
+  font-size: 15px;
+  color: rgb(204, 204, 204);
+  margin-top: 20px;
+}
+
+
+.offers-div:after{
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  top: 0;
+  left: 0;
+
+  background-color:rgb(255, 55, 48);
+  opacity: 0;
+  border-radius: 10px;
+
+}
+
+.offers-div:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+
+.offers-div:hover{
+  border-color: rgb(255, 55, 48);
+}
+
+.section-4{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(23, 23, 23);
+  color: aliceblue;
+  padding-left: 85px;
+}
+
+.section-4-text{
+width: 50%;
+height: 100%;
+float: left;
+}
+.section-4-photo{
+width: 50%;
+height: 100%;
+float: left;
+}
+
+.why{
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: 50px;
+  color: rgb(255, 0, 0);
+}
+.willing{
+  font-size: 20px;
+  margin-bottom: 50px;
+margin-top: 20px;
+}
+
+.dots{
+  width: 5%;
+  height: 50%; 
+  float: left;
+
+}
+.dots i{
+  display: block;
+  margin-top: 48px;
+}
+
+.us{
+  width: 80%;
+  height: 50%;
+  float: left;
+}
+
+.us p{
+  margin-top: 28px;
+  left: 0;
+}
+
+.photo{
+  width: 350px;
+  height: 400px;
+  background-image: url(../images/istockphoto-909240376-612x612.jpg);
+  background-size: cover  ;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.photo-dots{
+  text-align: center;
+  margin-top: 15px;
+  font-size: 10px;
+}
+.photo-dots i{
+  margin-left: 5px;
+  transition: 0.5s;
+}
+.photo-dots i:hover{
+  color: rgb(255, 55, 48);
+}
+
+.section-5{
+  width: 100%;
+  height: 50vh;
+  background-image: url(../images/red-technology.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.section-5-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.states{
+  width: 20%;
+  height: 80%;
+  text-align: center;
+  color: aliceblue;
+  padding-top: 110px;
+  float: left;
+
+}
+
+.states-icon{
+  font-size: 35px;
+
+}
+.states-num{
+  font-size: 25px;
+  margin: 5px 0px;
+}
+
+.states-1{
+  margin-left: 145px;
+}
+
+.section-6{
+text-align: center;
+color: aliceblue;
+width: 100%;
+height: 100vh;
+background-color:rgb(36, 36, 36);
+
+}
+
+.section-6 h2{
+  font-size: 40px;
+  color: rgb(255, 0, 0);
+  padding-top: 60px;
+}
+.pricing-div{
+  width: 25%;
+  height: 450px;
+  float: left;
+  margin-right: 80px;
+  margin-top: 50px;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+.pricing-div:hover{
+  border-color: rgb(255, 55, 48);
+}
+.container-6{
+  width: 100%;
+  padding-left: 160px;
+}
+
+.plan{
+  margin-top: 30px;
+  font-size: 20px;
+}
+.circle{
+  width: 100px;
+  height: 100px;
+  border: 2px solid aliceblue;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 18px;
+  font-size: 20px;
+}
+
+.pricing-text{
+  margin-top: 10px;
+}
+
+.purchase{
+  width: 170px;
+  height: 40px;
+  font-size: 15px;
+  border-radius: 20px;
+  color: aliceblue;
+  background-color: transparent;
+  border: 2px solid white;
+  margin-top: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.purchase:hover{
+  border-color: rgb(255, 55, 48);
+  color: rgb(255, 55, 48);
+}
+.pricing-div:after{
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  top: 0;
+  left: 0;
+
+  background-color:rgb(255, 55, 48);
+  opacity: 0;
+  border-radius: 10px;
+
+}
+
+.pricing-div:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  transition: 1s;
+}
+
+.section-7{
+  width: 100%;
+  height: 50vh;
+  background-color: aqua;
+  background-image: url(../images/494115.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+.section-7-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: aliceblue;
+}
+.section-7-overlay h2{
+  font-size: 40px;
+  font-weight: 600;
+  padding-top:20px ;
+}
+
+.container-7{
+  width: 70%;
+  height: 250px;
+  margin: auto;
+}
+
+.ceo{
+  width: 40%;
+  height: 100%;
+  float: left;
+  margin-right: 70px;
+
+}
+
+.ceo i{
+  font-size: 40px;
+  margin-top: 40px;
+ margin-right:15px ;
+}
+
+.icon-7{
+  width: 20%;
+  float: left;
+}
+.text-7{
+  width: 80%;
+  float: left;
+  padding-top: 45px;
+  padding-right: 200px;
+  font-size: 18px;
+}
+.web{
+  color: rgb(255, 0, 0);
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+.ceo-text{
+  font-size: 13px;
+  text-align: left;
+}
+.ceo-2{
+margin-left: 60px;
+}
+
+.section-8{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(36, 36, 36);
+}
+.section-8 h2{
+color: rgb(255, 0, 0);
+padding-top: 80px;
+font-size: 40px;
+}
+
+.section-8-container{
+  width: 100%;
+  height: 50%;
+  margin-top: 60px;
+  overflow:auto ;
+}
+.section-8-div{
+  width: 25%;
+  height: 90%;
+  float: left;
+  margin-top: 20px;
+  margin-left: 90px;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  position: relative;
+  transition: 0.5s;
+}
+.section-8-div:hover{
+  border-color: rgb(255, 55, 48);
+}
+
+.section-8-image{
+  width: 80%;
+  height: 60%;
+  background-image: url(../images/Client-employee-business-man-icon-Graphics-31597820-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.section-8-div p{
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 15px;
+}
+
+.image-overlay{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;  
+  
+}
+.section-8-div:hover .image-overlay{
+  visibility: visible;
+  opacity: 1;
+}
+.overlay-icons{
+  font-size: 30px;
+  margin-left: 90%;
+
+}
+.overlay-icons i{
+  display: block;
+}
+
+.section-8-div:after{
+  position: absolute;
+  content: "";
+
+  width: 0%;
+  height: 0%;
+
+  top: 0;
+  left: 0;
+
+  background-color:rgb(255, 55, 48);
+  opacity: 0;
+  border-radius: 10px;
+
+}
+
+.section-8-div:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  transition: 0.5s;
+}
+
+.section-9{
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(23, 23, 23);
+  text-align: center;
+}
+
+.section-9 ul li {
+  display: inline-block;
+  list-style: none;
+} 
+.section-9 ul i{
+  font-size: 35px;
+  color: aliceblue;
+  margin-top: 150px;
+  margin-left: 30px;
+  transition :0.4s ;
+}
+.section-9 ul i:hover{
+  color: rgb(255, 0, 0);
+  
+}
+.section-9 p{
+  color: aliceblue;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+  font-size: 11px;
+  margin-left: 30px;
+}
